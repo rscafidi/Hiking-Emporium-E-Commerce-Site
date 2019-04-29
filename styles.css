@@ -1,0 +1,292 @@
+/*
+font-family: 'Black Han Sans', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Dosis', sans-serif;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+li {
+
+}
+body {
+    background-image: url(images/bg.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+    float: left;
+    padding: 15px;
+}
+
+.wrapper {
+    margin: auto;
+    width: 900px;
+    border: 2px solid black;
+    padding: 10px;
+    overflow: auto;
+    background-color: white;
+}
+
+.banner {
+    font-size: 5em;
+    color: #353531;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    border: 2px solid #353531;
+    width: 666px;
+    justify-content: space-between;
+    background-color: #353531;
+
+}
+
+.footer {
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #353531;
+}
+
+h2 {
+    font-size: 3em;
+    padding: 5px 5px 5px 5px;
+    color: #353531;
+}
+
+ul a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+    line-height: 50px;
+    color: white;
+    background-color: #353531;
+    font-size: 1.2em;
+}
+
+ul a:hover {
+    background-color: #c19908;
+    color: #353531;
+    font-size: 1.2em;
+}
+
+#current {
+    background-color: #c19908;
+    color: #353531;
+    font-size: 1.2em;
+}
+
+p {
+    padding: 10px;
+    font-size: 1.5em;
+    font-family: 'Dosis', sans-serif;
+    text-align: justify;
+    color: #353531;
+}
+
+a {
+    color: #c19908;
+    font-weight: bold;
+}
+
+#accent1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #c19908;
+    font-style: italic;
+    display: inline;
+}
+
+a.product {
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+a.product {
+    color: #353531;
+}
+
+.product {
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    float: left;
+    display: block;
+    color: #353531;
+    margin: 5px 5px 5px 5px;
+}
+
+.product img {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    display: block;
+
+}
+
+.product table {
+    text-align: center;
+    width: auto;
+    display: inline-block;
+}
+
+.product:hover {
+    background-color: #c19908;
+    colot: #ffffef;
+}
+
+.img-zoom-container {
+    position: relative;
+    display: inline-block;
+
+}
+
+.img-zoom-lens {
+    position: absolute;
+    /*border: 1px solid #d4d4d4;*/
+    /*set the size of the lens:*/
+    width: 150px;
+    height: 150px;
+
+}
+
+.img-zoom-result {
+    border: 1px solid #d4d4d4;
+    /*set the size of the result div:*/
+    width: 400px;
+    height: 500px;
+    float: right;
+}
+
+.pictureBar img{
+    width: auto;
+    height: 100px;
+    border: 3px solid white;
+}
+
+.pictureBar img:hover {
+    border: 3px solid red;
+    cursor: pointer;
+}
+p.pictureBar {
+    display: inline-block;
+}
+
+.mybutton {
+    background-color: #353531;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #353531;
+    margin: 5px 5px 5px 5px
+}
+
+.mybutton:hover {
+    background-color: #c19908;
+    color: #353531;
+    cursor: pointer;
+}
+input {
+    border: 1px solid #353531;
+    padding: 3px 3px 3px 3px;
+}
+
+fieldset {
+    border: 2px solid #353531;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+    padding: 5px 10px 5px 10px;
+}
+
+legend {
+    font-size: 1.2em;
+    padding: 5px 5px 5px 5px;
+    color: #353531;
+    font-family: 'Dosis', sans-serif;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #c19908;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+select {
+    border: 1px solid #353531;
+}
+
+.invalid_hint {
+    color: #b40d00;
+}
+
+.invalid_field {
+    border: 2px solid #b31a00;
+    box-shadow: 0 0 10px #b31a00;
+}
+
+.invalid_field:focus {
+    outline: none;
+    border-color: #ed9901;
+    box-shadow: 0 0 10px #ed9901;
+}
+
+.valid_hint {
+    color: #01b353;
+}
+
+.valid_field {
+    border: 2px solid #01b353;
+
+}
